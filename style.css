@@ -23,6 +23,13 @@
 }
 
 body {
+  background-image: url("https://raw.githubusercontent.com/minstlar/web-blog/main/img/newjeans_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body {
     font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
     margin: 0;
     background-color: var(--cor-fundo);
