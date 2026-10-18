@@ -8,96 +8,73 @@
 </head>
 <body>
 
-    <!-- CABEÇALHO -->
-    <header>
-        <h1>✩ Meu Blog ✩</h1>
-        <p class="subtitulo">um cantinho na internet</p>
-    </header>
+    <div id="container">
 
-    <!-- ABAS DE NAVEGAÇÃO -->
-    <nav class="abas">
-        <button class="aba ativa" data-aba="home">Home</button>
-        <button class="aba" data-aba="sobre">Sobre</button>
-        <button class="aba" data-aba="posts">Posts</button>
-        <button class="aba" data-aba="links">Links</button>
-    </nav>
-
-    <!-- CONTEÚDO PRINCIPAL -->
-    <div class="layout">
-
-        <!-- ÁREA DE CONTEÚDO (muda conforme a aba) -->
-        <main>
-            <!-- ABA HOME -->
-            <section id="home" class="conteudo ativo">
-                <h2>Bem-vindo!</h2>
-                <p>Oi! Este é o meu blog. Aqui vou postar coisas sobre a vida, hobbies e o que mais der na telha.</p>
-                <p>Use as abas acima para navegar. 💾</p>
-
-                <h3>Posts Recentes</h3>
-                <ul class="lista-posts">
-                    <li><a href="posts/primeiro-post.html">Meu primeiro post</a> <span class="data">18/10/2026</span></li>
-                    <li><a href="posts/segundo-post.html">Sobre este blog</a> <span class="data">17/10/2026</span></li>
+        <!-- CABEÇALHO -->
+        <div id="headerArea">
+            <div id="header"></div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
                 </ul>
-            </section>
+            </nav>
+        </div>
 
-            <!-- ABA SOBRE -->
-            <section id="sobre" class="conteudo">
-                <h2>Sobre mim</h2>
-                <p>Escreva aqui quem você é, do que gosta, o que faz. Fique à vontade para se apresentar!</p>
-                <p>Você pode falar dos seus hobbies, sua música favorita, seus projetos...</p>
-            </section>
+        <!-- CONTEÚDO + SIDEBARS -->
+        <div id="flex">
 
-            <!-- ABA POSTS -->
-            <section id="posts" class="conteudo">
-                <h2>Todos os Posts</h2>
-                <p>Aqui fica a lista completa. Cada novo post você adiciona um <code>&lt;li&gt;</code> nessa lista.</p>
-                <ul class="lista-posts">
-                    <li><a href="posts/primeiro-post.html">Meu primeiro post</a> <span class="data">18/10/2026</span></li>
-                    <li><a href="posts/segundo-post.html">Sobre este blog</a> <span class="data">17/10/2026</span></li>
+            <!-- SIDEBAR ESQUERDA -->
+            <aside id="leftSidebar">
+                <h2>Título</h2>
+                <div class="box">
+                    <p>Texto de exemplo. Substitua pelo seu conteúdo.</p>
+                </div>
+
+                <h2>Título</h2>
+                <h3>Subtítulo</h3>
+                <ul>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
                 </ul>
-            </section>
+            </aside>
 
-            <!-- ABA LINKS -->
-            <section id="links" class="conteudo">
-                <h2>Links</h2>
-                <p>Lugares que eu gosto:</p>
-                <ul class="lista-links">
-                    <li><a href="https://neocities.org" target="_blank">Neocities</a></li>
-                    <li><a href="https://gifcities.org" target="_blank">GifCities</a></li>
-                    <li><a href="https://sadgrl.online" target="_blank">Sadgrl</a></li>
+            <!-- CONTEÚDO PRINCIPAL -->
+            <main>
+                <h1>Título da Página</h1>
+                <p><strong>Texto em destaque.</strong></p>
+                <p>Parágrafo de exemplo. Escreva aqui o conteúdo do seu post ou da sua página inicial.</p>
+                <p>Outro parágrafo de exemplo. Você pode adicionar quantos quiser.</p>
+                <p>Mais um parágrafo para demonstrar o espaçamento entre os textos.</p>
+            </main>
+
+            <!-- SIDEBAR DIREITA -->
+            <aside id="rightSidebar">
+                <h2>Título</h2>
+                <div class="box">
+                    <p>Texto de exemplo. Substitua pelo seu conteúdo.</p>
+                </div>
+
+                <h2>Título</h2>
+                <h3>Subtítulo</h3>
+                <ul>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
                 </ul>
-            </section>
-        </main>
+            </aside>
 
-        <!-- SIDEBAR -->
-        <aside>
-            <!-- Cartão de perfil -->
-            <div class="cartao-perfil">
-                <img src="https://via.placeholder.com/100" alt="Avatar" class="avatar">
-                <h3>Seu Nome</h3>
-                <p class="bio">Uma frase curta sobre você.</p>
-            </div>
+        </div>
 
-            <!-- Botões 88x31 -->
-            <div class="botoes-88x31">
-                <a href="#"><img src="https://via.placeholder.com/88x31/ff69b4/ffffff?text=Botao+1" alt="Botão 1"></a>
-                <a href="#"><img src="https://via.placeholder.com/88x31/00ffff/000000?text=Botao+2" alt="Botão 2"></a>
-                <a href="#"><img src="https://via.placeholder.com/88x31/00ff00/000000?text=Botao+3" alt="Botão 3"></a>
-                <a href="#"><img src="https://via.placeholder.com/88x31/ffcc00/000000?text=Botao+4" alt="Botão 4"></a>
-            </div>
+        <!-- RODAPÉ -->
+        <footer id="footer">Rodapé</footer>
 
-            <!-- Contador (placeholder) -->
-            <div class="contador">
-                <p>Visitantes:</p>
-                <p class="numero">0000</p>
-            </div>
-        </aside>
     </div>
-
-    <!-- RODAPÉ -->
-    <footer>
-        <p>© 2026 Meu Blog · Feito com ♡ no Neocities</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>
